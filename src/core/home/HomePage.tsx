@@ -13,18 +13,6 @@ function HomePage() {
   const [data, setData] = useState<ImagesResponseDataInner[]>([]);
   const toast = useToast();
 
-  if (isPending) {
-    return (
-      <div className="home-page__spinner-wrapper">
-        <div>
-          <Spinner color="teal.500" />
-
-          <p>Generating</p>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div>
       <h1 className="home-page__title">OpenAI Image Generator</h1>
@@ -43,16 +31,24 @@ function HomePage() {
         />
 
         <Button
-          className="home-page__form__button"
+          className={"home-page__form__button"}
           colorScheme={"teal"}
           size={"lg"}
-          onClick={fetchData}>
+          onClick={fetchData}
+          isLoading={isPending}
+          loadingText={"Generating"}>
           <SearchIcon />
           Search
         </Button>
       </div>
 
-      {data && (
+      {isPending && (
+        <div className="home-page__spinner-wrapper">
+          <Spinner color="teal.500" />
+        </div>
+      )}
+
+      {data && !isPending && (
         <div className="home-page__image-list">
           {data.map((item, index) => {
             return (
