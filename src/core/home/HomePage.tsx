@@ -4,7 +4,7 @@ import {Button, Input, Spinner, useToast} from "@chakra-ui/react";
 import {useState} from "react";
 
 import {openai} from "../api/openai/openaiApi";
-import SearchIcon from "../components/icons/SearchIcon";
+import BrushIcon from "../components/icons/BrushIcon";
 import {ImagesResponseDataInner} from "openai";
 
 function HomePage() {
@@ -37,8 +37,8 @@ function HomePage() {
           onClick={fetchData}
           isLoading={isPending}
           loadingText={"Generating"}>
-          <SearchIcon />
-          Search
+          <BrushIcon />
+          Generate
         </Button>
       </div>
 
