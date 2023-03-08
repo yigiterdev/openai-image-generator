@@ -3,8 +3,8 @@ import "./_home-page.scss";
 import {Button, Input, Spinner, useToast} from "@chakra-ui/react";
 import {useState} from "react";
 
-import {openai} from "../api/openai/openaiApi";
-import BrushIcon from "../components/icons/BrushIcon";
+import {openai} from "../core/api/openai/openaiApi";
+import BrushIcon from "../core/components/icons/BrushIcon";
 import {ImagesResponseDataInner} from "openai";
 
 function HomePage() {

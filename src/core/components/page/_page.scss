@@ -1,8 +1,8 @@
-@import "../../ui/styles/media-query";
+@import "../../ui/styles/media-queries";
 
 .page-content {
   max-width: 1166px;
-  min-height: calc(calc(100 * var(--vh)) - 128px);
+  min-height: calc(calc(100 * var(--vh)) - 208px);
 
   margin: 40px auto;
 }

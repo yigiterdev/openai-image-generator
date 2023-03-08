@@ -1,0 +1,37 @@
+@import "../core/ui/styles/media-queries";
+
+.not-found-page {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 500px auto;
+  gap: 100px;
+
+  padding: 100px;
+}
+
+.not-found-page__title {
+  margin-bottom: 20px;
+
+  font-family: "Tilt Warp", cursive;
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.not-found-page__description {
+  color: #666666;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@include for-small-screens {
+  .not-found-page {
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    padding: 48px 24px;
+
+    text-align: center;
+  }
+}
