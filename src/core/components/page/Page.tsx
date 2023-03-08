@@ -14,7 +14,7 @@ interface PageProps {
 
 function Page({customClassName, title}: PageProps) {
   useLayoutEffect(() => {
-    document.title = `${title} | Pera Wallet`;
+    document.title = `${title} | AI Image Generator`;
   }, [title]);
 
   return (
