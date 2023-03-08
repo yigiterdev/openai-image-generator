@@ -39,12 +39,13 @@ function HomePage() {
           focusBorderColor={"teal.500"}
           onChange={handleInputChange}
           placeholder={"Search for generate 8 image"}
-          size={"md"}
+          size={"lg"}
         />
 
         <Button
           className="home-page__form__button"
           colorScheme={"teal"}
+          size={"lg"}
           onClick={fetchData}>
           <SearchIcon />
           Search

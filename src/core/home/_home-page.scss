@@ -24,39 +24,51 @@
 .home-page__title {
   max-width: 900px;
 
-  margin: 0 auto;
+  margin: 0 auto 12px;
 
-  font-family: "Tilt Neon", cursive;
+  font-family: "Tilt Warp", cursive;
   font-size: 32px;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .home-page__description {
   max-width: 900px;
 
-  margin: 0 auto;
+  margin: 0 auto 24px;
 
   color: #666666;
 
-  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .home-page__form {
   display: grid;
   align-items: center;
-  grid-template-columns: auto 200px;
+  grid-template-columns: auto 130px;
   gap: 20px;
 
   max-width: 900px;
 
   margin: 0 auto;
+
+  .chakra-input {
+    color: #1c1c1c;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
-.home-page__form__button {
+.home-page__form__button.chakra-button {
   display: flex;
   align-items: center;
   gap: 4px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .home-page__image-list {
