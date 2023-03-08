@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  height: 64px;
+  padding: 0 24px;
+
+  border-top: 1px solid #f3f3f7;
+
+  font-weight: 700;
+
+  svg {
+    width: 70px;
+
+    g {
+      fill: #1c1c1c;
+    }
+  }
+}

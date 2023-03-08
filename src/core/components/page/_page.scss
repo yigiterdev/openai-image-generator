@@ -1,0 +1,16 @@
+@import "../../ui/styles/media-query";
+
+.page-content {
+  max-width: 1166px;
+  min-height: calc(calc(100 * var(--vh)) - 128px);
+
+  margin: 40px auto;
+}
+
+@include for-small-screens {
+  .page-content {
+    height: 100%;
+
+    padding: 0 24px;
+  }
+}
