@@ -12,7 +12,12 @@ function Header() {
         <p>AI Image Generator</p>
       </div>
 
-      <GitHubIcon />
+      <a
+        href="https://github.com/yigiterdev/openai-image-generator"
+        target="_blank"
+        rel="noreferrer">
+        <GitHubIcon />
+      </a>
     </header>
   );
 }
