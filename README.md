@@ -1,6 +1,6 @@
 # OpenAI Image Generator
 
-AI image generator which is created with OpenAI API. Basically, this app generates 8 photos according to promt. You can try with [live demo]().
+AI image generator which is created with OpenAI API. Basically, this app generates 8 photos according to promt. You can try with [live demo](https://open-ai-image-generator-app.vercel.app/).
 
 ## Development
 
